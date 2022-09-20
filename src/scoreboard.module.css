@@ -1,0 +1,75 @@
+.wrapper {
+  width: 500px;
+  height: 300px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homePoints {
+  margin-right: 50px;
+}
+
+.title {
+  text-align: center;
+  color: white;
+}
+
+.table {
+  width: 100px;
+  height: 70px;
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+  background-color: black;
+}
+
+.tableActive {
+  width: 100px;
+  height: 70px;
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+  background-color: black;
+  box-shadow: 0px 0px 20px red;
+}
+
+.counter {
+  color: red;
+  font-size: 50px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button {
+  width: 25px;
+  border: 1px white solid;
+  border-radius: 5px;
+  cursor: pointer;
+
+  color: white;
+}
+
+.newGame {
+  max-width: 90px;
+  padding: 5px 0 5px 5px;
+  margin: 0 auto;
+
+  border: 1px white solid;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
