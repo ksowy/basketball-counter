@@ -14,7 +14,7 @@ export const ScoreBoard = () => {
   }
 
   return (
-    <div>
+    <div className={styles.scoreBoard}>
       <div className={styles.wrapper}>
         <HomeTable
           homeScore={homeScore}

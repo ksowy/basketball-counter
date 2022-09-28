@@ -7,7 +7,7 @@ export const HomeTable = ({ homeScore, guestScore, setHomeScore }) => {
       <div
         className={homeScore > guestScore ? styles.tableActive : styles.table}
       >
-        <h3 className={styles.counter}>{homeScore}</h3>
+        <p className={styles.counter}>{homeScore}</p>
       </div>
       <div className={styles.controls}>
         <div

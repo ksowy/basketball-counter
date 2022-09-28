@@ -1,8 +1,13 @@
-.wrapper {
-  width: 500px;
-  height: 300px;
+.scoreBoard {
+  padding: 70px 80px;
+  background-color: #1b244a;
+  font-family: 'Cursed Timer ULiL';
+}
 
+.wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  margin-bottom: 50px;
 }
