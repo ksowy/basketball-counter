@@ -8,11 +8,6 @@ export const ScoreBoard = () => {
   const [homeScore, setHomeScore] = useState(0)
   const [guestScore, setGuestScore] = useState(0)
 
-  const refreshCounter = () => {
-    setHomeScore(0)
-    setGuestScore(0)
-  }
-
   return (
     <div className={styles.scoreBoard}>
       <div className={styles.wrapper}>
@@ -29,7 +24,7 @@ export const ScoreBoard = () => {
         />
       </div>
 
-      <GameRestart refreshCounter={refreshCounter} />
+      <GameRestart setGuestScore={setGuestScore} setHomeScore={setHomeScore} />
     </div>
   )
 }
