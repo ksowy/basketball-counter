@@ -1,5 +1,5 @@
-import { ScoreBoard } from './scoreboard'
 import styles from './app.module.css'
+import { ScoreBoard } from './components/scoreboard/scoreboard'
 
 export const App = () => {
   return (

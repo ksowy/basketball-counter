@@ -1,0 +1,10 @@
+.newGame {
+  max-width: 90px;
+  padding: 5px 0 5px 5px;
+  margin: 0 auto;
+
+  border: 1px white solid;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
