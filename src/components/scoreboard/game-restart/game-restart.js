@@ -1,16 +1,25 @@
 import JSConfetti from 'js-confetti'
 import styles from './game-restart.module.css'
 
-export const GameRestart = ({ setHomeScore, setGuestScore }) => {
+export const GameRestart = ({
+  homeScore,
+  guestScore,
+  setHomeScore,
+  setGuestScore,
+}) => {
   const jsConfetti = new JSConfetti()
 
   const refreshCounter = () => {
     setHomeScore(0)
     setGuestScore(0)
-    jsConfetti.addConfetti({
-      emojis: ['🏀', 'CSS - 💩'],
-      emojiSize: 40,
-    })
+    if (homeScore || guestScore) {
+      jsConfetti.addConfetti({
+        emojis: ['🏀'],
+        emojiSize: 35,
+      })
+    } else {
+      return
+    }
   }
   return (
     <div className={styles.newGame}>

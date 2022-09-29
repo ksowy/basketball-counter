@@ -1,19 +1,16 @@
-import styles from './guest-table.module.css'
+import styles from './table.module.css'
 
-export const GuestTable = ({ setGuestScore, homeScore, guestScore }) => {
+export const Table = ({ score, setScore }) => {
   return (
     <div>
-      <h2 className={styles.title}>GUEST</h2>
-      <div
-        className={guestScore > homeScore ? styles.tableActive : styles.table}
-      >
-        <p className={styles.counter}>{guestScore}</p>
+      <div className={styles.table}>
+        <p className={styles.counter}>{score}</p>
       </div>
       <div className={styles.controls}>
         <div
           className={styles.button}
           onClick={() => {
-            setGuestScore(guestScore + 1)
+            setScore(score + 1)
           }}
         >
           +1
@@ -21,7 +18,7 @@ export const GuestTable = ({ setGuestScore, homeScore, guestScore }) => {
         <div
           className={styles.button}
           onClick={() => {
-            setGuestScore(guestScore + 2)
+            setScore(score + 2)
           }}
         >
           +2
@@ -29,7 +26,7 @@ export const GuestTable = ({ setGuestScore, homeScore, guestScore }) => {
         <div
           className={styles.button}
           onClick={() => {
-            setGuestScore(guestScore + 3)
+            setScore(score + 3)
           }}
         >
           +3

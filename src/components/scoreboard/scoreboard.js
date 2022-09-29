@@ -1,7 +1,6 @@
 import styles from './scoreboard.module.css'
 import { useState } from 'react'
-import { GuestTable } from './guest-table'
-import { HomeTable } from './home-table'
+import { Table } from './table'
 import { GameRestart } from './game-restart'
 
 export const ScoreBoard = () => {
@@ -9,22 +8,26 @@ export const ScoreBoard = () => {
   const [guestScore, setGuestScore] = useState(0)
 
   return (
-    <div className={styles.scoreBoard}>
-      <div className={styles.wrapper}>
-        <HomeTable
-          homeScore={homeScore}
-          setHomeScore={setHomeScore}
-          guestScore={guestScore}
-        />
+    <div className={styles.container}>
+      <div className={styles.scoreBoard}>
+        <div className={styles.wrapper}>
+          <h2 className={styles.title}>HOME</h2>
 
-        <GuestTable
-          homeScore={homeScore}
-          guestScore={guestScore}
-          setGuestScore={setGuestScore}
-        />
+          <Table score={homeScore} setScore={setHomeScore} />
+        </div>
+
+        <div className={styles.wrapper}>
+          <h2 className={styles.title}>GUEST</h2>
+
+          <Table score={guestScore} setScore={setGuestScore} />
+        </div>
       </div>
-
-      <GameRestart setGuestScore={setGuestScore} setHomeScore={setHomeScore} />
+      <GameRestart
+        homeScore={homeScore}
+        guestScore={guestScore}
+        setHomeScore={setHomeScore}
+        setGuestScore={setGuestScore}
+      />
     </div>
   )
 }
