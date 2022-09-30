@@ -1,0 +1,23 @@
+.container {
+  padding: 70px 80px;
+  background-color: #1b244a;
+  font-family: 'Cursed Timer ULiL';
+}
+
+.scoreBoard {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.wrapper:first-child {
+  margin-right: 100px;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 40px;
+
+  font-family: 'Verdana', san-serif;
+  text-align: center;
+  color: #eeeeee;
+}

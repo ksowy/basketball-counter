@@ -1,0 +1,51 @@
+.table {
+  width: 155px;
+  height: 120px;
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+  background-color: black;
+}
+
+.tableActive {
+  width: 155px;
+  height: 120px;
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+  background-color: black;
+  box-shadow: 0px 0px 20px #f94f6d;
+}
+
+.counter {
+  color: #f94f6d;
+  font-size: 90px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px #9aabd8 solid;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #9aabd8;
+  font-size: 18px;
+}
